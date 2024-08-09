@@ -1,0 +1,26 @@
+It is a structure that you can buld software on it 
+Using framework sav time and reduces the risk of errors
+You don't need to configured it (it creates a directory structure)
+
+Libraries vs Framework
+
+Library
+Library is a collection of pre written code that can be used to perform common task
+User/programmer is calling code 
+
+Framework
+It is the code in the framework that calls the code
+it tells you where to put your code
+
+Django
+->open-source web framework written in python that allows you to create web application
+->Supported by an independent foundation( Django software foundation)
+-> Django is primarily a backend framework , it has features that allow it to handle frontend development as well
+Why Django:
+->set-up easy
+->ready-to-user interface for administration activities
+
+Python package index
+
+It is a repo of software for the python programming language
+helps you to install software developed and shared by python community
