@@ -4,19 +4,19 @@ from django.http import *
 # Create your views here.
 def week_num(request,week):
     if week==1:
-        return HttpResponse("It's Monday")
+        return HttpResponseRedirect('/week/mon')
     elif week==2:
-        return HttpResponse("It's Tuesday")
+        return HttpResponseRedirect('/week/tue')
     elif week==3:
-        return HttpResponse("It's Wednesday")
+        return HttpResponseRedirect('/week/wed')
     elif week==4:
-        return HttpResponse("It's Thursday")
+        return HttpResponseRedirect('/week/thu')
     elif week==5:
-        return HttpResponse("It's Friday")
+        return HttpResponseRedirect('/week/fri')
     elif week==6:
-        return HttpResponse("It's Saturday")
+        return HttpResponseRedirect('/week/sat')
     elif week==7:
-        return HttpResponse("It's Sunday")
+        return HttpResponseRedirect('/week/sun')
     else:
         return HttpResponse("Invalid week")
 def week_string(request,week):
