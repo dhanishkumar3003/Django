@@ -8,7 +8,15 @@
 <body>
     <ul>
         {% for auth in authors %}
-        <li>{{ auth.first_name }}</li>
+        {% if auth.slug %}
+        <li>
+            <a href="{% url 'AuthorInfoUsingSlug' auth.slug %}">{{ auth.first_name }} {{ auth.last_name }}</a>
+        </li>
+        {% else %}
+        <li>
+            {{ auth.first_name }} {{ auth.last_name }} (Slug missing)
+        </li>
+        {% endif %}
         {% endfor %}
     </ul>
 </body>

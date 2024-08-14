@@ -1,12 +1,13 @@
 from django.shortcuts import render
 from django.http import *
+
 # Create your views here.
 
 month_schedule = {
     'jan' : 'Learning Python',
     'feb' : 'Learning Java',
     'mar' : 'Happy birthday to Me',
-    'aprl' : 'Learning React',
+    'apr' : 'Learning React',
     'may' : 'learnign .net'
 }
 
