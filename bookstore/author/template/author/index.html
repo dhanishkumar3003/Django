@@ -6,6 +6,8 @@
     <title>Author List</title>
 </head>
 <body>
+    <h1>Number of authors : {{authcount}}</h1>
+    <h1>Average author rating : {{avgrating}}</h1>
     <ul>
         {% for auth in authors %}
         {% if auth.slug %}

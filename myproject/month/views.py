@@ -33,5 +33,6 @@ def monthly_details(request,month):
 def index(request):
     return HttpResponse("This Works!")
 
+
 def dhanish(request):
-    return HttpResponse("My name is dhanish")
+    return render(request, 'month\month.html')

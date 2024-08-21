@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="Name">Enter the name:</label><br>
+    <input type="text" name="Name" id="Name" placeholder="Name"><br>
+    
+    <label for="age">Enter the age:</label><br>
+    <input type="text" name="age" id="age" placeholder="Age"><br>
+    
+    <label for="image">Upload an image:</label><br>
+    <input type="file" name="image" id="image"><br>
+    <br>
+    <input type="submit" value="Send Data">
+</form>
+{% endblock content %}
